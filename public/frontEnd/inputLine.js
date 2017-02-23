@@ -1,9 +1,10 @@
-console.log("working!");
-
 //input line code 
 var inputString = document.createElement("INPUT");
 inputString.value = "Search";
 inputString.id = "lineString";
+inputString.className = "col-md-4 col-md-offset-4";	
+
+document.body.appendChild(inputString);
 
 inputString.onfocus = function() {
 	if (this.value == 'Search') {
@@ -18,8 +19,6 @@ inputString.onkeypress = function(e){
 	}
 };
 
-document.body.appendChild(inputString);
-
 // enter key code
 inputString.onkeypress = function(e){      
 	if(e.keyCode == 13) {
@@ -28,4 +27,6 @@ inputString.onkeypress = function(e){
 		inputString.value = "";
 	}
 };
+
+
 
