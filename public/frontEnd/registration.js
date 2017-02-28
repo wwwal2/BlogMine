@@ -1,0 +1,1 @@
+eight.onclick(console.log("click"))

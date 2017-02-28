@@ -11,16 +11,47 @@
   border-bottom: solid 2px #969696;
 }
 
-#header {
-  background-color: blue;
-}
-
-#second {
-  height: 30px;
-  background-color: yellow;
-}
-
 #third {
-  height: 100px;
-  background-color: green;
+  text-align: center;
+  font-size: 7em;
 }
+
+#brandImg {
+  height: 10em;
+}
+
+#fourth {
+  text-align: center;
+  font-size: 2em;
+  color: whitesmoke;
+  margin-top: 2%;
+  text-shadow: black 0.1em 0.1em 0.2em;    
+}
+
+#underHeaderClean {
+  height: 3em;
+}
+
+#underButtonsClean {
+  height: 6em;
+}
+
+#ninth {
+  margin-left: 8em
+}
+
+#seventh {
+  margin-left: 45em
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,45 +1,119 @@
 "use strict"
-//header base
-function domElementCreation(elementName, elemClass, elemId) {
+
+//Array of DOM elements
+var divElements = [
+	{
+		element: "div",
+		class: "row",
+		id:"header",
+		textContent: "",
+	},
+	{
+		element: "div",
+		class: "col-sm-1",
+		id:"beforeSecond",
+		textContent: "",
+	},
+	{
+		element: "div",
+		class: "col-sm-2",
+		id:"second",
+		textContent: "",
+	},
+	{
+		element: "div",
+		class: "col-sm-6",
+		id:"third",
+		textContent: "BLOG",
+	},
+	{
+		element: "div",
+		class: "col-sm-3",
+		id:"fourth",
+		textContent: "GeekHub student project",
+	},
+	{
+		element: "BUTTON",
+		class: "btn btn-primary btn-lg",
+		id:"seventh",
+		textContent: "Contacts",
+	},
+	{
+		element: "BUTTON",
+		class: "btn btn-danger btn-lg",
+		id:"eigth",
+		textContent: "Registration",
+	},
+	{
+		element: "BUTTON",
+		class: "btn btn-primary btn-lg",
+		id:"ninth",
+		textContent: "Photos",
+	},
+	{
+		element: "img",
+		class: "img-responsive",
+		id:"brandImg",
+		textContent: "",
+	},
+	{
+		element: "div",
+		class: "row",
+		id:"underHeaderClean",
+		textContent: "",
+	},
+	{
+		element: "div",
+		class: "row",
+		id:"underHeader",
+		textContent: "",
+	},
+	{
+		element: "div",
+		class: "row",
+		id:"underButtonsClean",
+		textContent: "",
+	},
+];
+
+// DOM base header construction
+function domElementCreation(elementName, elemClass, elemId, textContent) {
 	var newElem = document.createElement(elementName);
 	newElem.className = elemClass;
 	newElem.id = elemId;
+	newElem.textContent = textContent;
 	return newElem;
 }
 
-var divElements = [
-	"nav", "navbar navbar-default", "header",
-	"div", "container-fluid", "second",
-	"div", "navbar-header", "third"
-]
-var y = 1; var z = 2;
-for(var i=0; i<divElements.length; i = i+3) {
-	document.body.appendChild(domElementCreation(divElements[i], divElements[y], divElements[z]));
-	y= y+3; z= z+3;
+//making variables for DOM elements
+function declare(varName) {
+	varName = document.getElementById(varName);
+	return varName
 }
 
+//Execution of DOM creation
+for(var i=0; i<divElements.length; i++) {
+	var div = divElements[i];
+	document.body.appendChild(domElementCreation(div.element, div.class, div.id, div.textContent))
+	declare(div.id);
+}
+
+ //manual DOM tree construction
+header.appendChild(beforeSecond);
 header.appendChild(second);
-second.appendChild(third);
-
-//buttons creation code
-var headerBtns = document.createElement("div");
-headerBtns.className = "btn-group btn-group-lg";
-third.appendChild(headerBtns);
-
-function btnCreation(textButton) {
-	var btn = document.createElement("BUTTON");
-	btn.textContent = textButton;
-	btn.className = "btn btn-primary";
-	return btn;
-}
-
-var btnNames = ["button1", "button2", "button3"];
-
-for (var i=0; i<btnNames.length; i++) {
-	headerBtns.appendChild(btnCreation(btnNames[i]));
-}
+header.appendChild(third);
+header.appendChild(fourth);
+second.appendChild(brandImg);
+underHeader.appendChild(ninth); 
+underHeader.appendChild(seventh);
+underHeader.appendChild(eigth);
 
 
+//header image insertion
+brandImg.setAttribute("src", "/home/vera/WebstormProjects/git1/Blog/blogContent/brand.jpg");
+
+
+ 	
 
 
 
