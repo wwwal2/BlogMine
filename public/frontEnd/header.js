@@ -1,5 +1,4 @@
 "use strict"
-
 //Array of DOM elements
 var divElements = [
 	{
@@ -41,7 +40,7 @@ var divElements = [
 	{
 		element: "BUTTON",
 		class: "btn btn-danger btn-lg",
-		id:"eigth",
+		id:"eight",
 		textContent: "Registration",
 	},
 	{
@@ -74,6 +73,13 @@ var divElements = [
 		id:"underButtonsClean",
 		textContent: "",
 	},
+	{
+		element: "div",
+		class: "row",
+		id:"sliderDiv",
+		textContent: "",
+	},
+
 ];
 
 // DOM base header construction
@@ -106,11 +112,16 @@ header.appendChild(fourth);
 second.appendChild(brandImg);
 underHeader.appendChild(ninth); 
 underHeader.appendChild(seventh);
-underHeader.appendChild(eigth);
+underHeader.appendChild(eight);
+underButtonsClean.appendChild(sliderDiv);
 
 
 //header image insertion
 brandImg.setAttribute("src", "/home/vera/WebstormProjects/git1/Blog/blogContent/brand.jpg");
+
+eight.onclick = function() {
+	console.log("click");
+}
 
 
  	

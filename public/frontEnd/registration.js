@@ -1,1 +1,4 @@
-eight.onclick(console.log("click"))
+
+
+var eight = document.getElementById("eight");
+console.log(eight);
