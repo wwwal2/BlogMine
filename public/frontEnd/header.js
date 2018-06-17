@@ -5,79 +5,79 @@ var divElements = [
 		element: "div",
 		class: "row",
 		id:"header",
-		textContent: "",
+		textContent: ""
 	},
 	{
 		element: "div",
 		class: "col-sm-1",
 		id:"beforeSecond",
-		textContent: "",
+		textContent: ""
 	},
 	{
 		element: "div",
 		class: "col-sm-2",
 		id:"second",
-		textContent: "",
+		textContent: ""
 	},
 	{
 		element: "div",
 		class: "col-sm-6",
 		id:"third",
-		textContent: "BLOG",
+		textContent: "BLOG"
 	},
 	{
 		element: "div",
 		class: "col-sm-3",
 		id:"fourth",
-		textContent: "GeekHub student project",
+		textContent: "GeekHub student project"
 	},
 	{
 		element: "BUTTON",
 		class: "btn btn-primary btn-lg",
 		id:"seventh",
-		textContent: "Contacts",
+		textContent: "Contacts"
 	},
 	{
 		element: "BUTTON",
 		class: "btn btn-danger btn-lg",
 		id:"eight",
-		textContent: "Registration",
+		textContent: "Registration"
 	},
 	{
 		element: "BUTTON",
 		class: "btn btn-primary btn-lg",
 		id:"ninth",
-		textContent: "Photos",
+		textContent: "Photos"
 	},
 	{
 		element: "img",
 		class: "img-responsive",
 		id:"brandImg",
-		textContent: "",
+		textContent: ""
 	},
 	{
 		element: "div",
 		class: "row",
 		id:"underHeaderClean",
-		textContent: "",
+		textContent: ""
 	},
 	{
 		element: "div",
 		class: "row",
 		id:"underHeader",
-		textContent: "",
+		textContent: ""
 	},
 	{
 		element: "div",
 		class: "row",
 		id:"underButtonsClean",
-		textContent: "",
+		textContent: ""
 	},
 	{
 		element: "div",
 		class: "row",
 		id:"sliderDiv",
-		textContent: "",
+		textContent: ""
 	},
 
 ];
